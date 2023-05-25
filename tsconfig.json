@@ -19,7 +19,8 @@
     "skipLibCheck": true,
     "typeRoots": [
       "node_modules/@types",
-      "typings"
+      "./typings",
+      "./types"
     ],
   },
   "paths": {
@@ -29,7 +30,10 @@
   },
   "include": [
     "src",
-    "typings"
+    "typings",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "typings/index.d.ts"
   ],
   "exclude": [
     "node_modules",

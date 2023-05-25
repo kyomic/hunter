@@ -1,2 +1,43 @@
 <!-- https://juejin.cn/post/7114959554709815326 -->
 <!-- https://segmentfault.com/a/1190000042584163-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <style>
+      .app {
+        width: 400px;
+      }
+    </style>
+    <!-- 2. 引入样式 -->
+
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.13/vue.js"></script> -->
+    <script src="assets/vue/2.6.13/vue.js"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="assets/element-ui/2.15.13/theme-chalk/index.css"
+    />
+    <!-- 3. 引入组件库 -->
+    <script src="assets/element-ui/2.15.13/index.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div id="root">
+        <h1>{{msg}}</h1>
+        <el-row>
+          <el-button>默认按钮</el-button>
+          <el-button type="primary" size="mini">主要按钮</el-button>
+          <el-button type="success" size="mini">成功按钮</el-button>
+          <el-button type="info" size="mini">信息按钮</el-button>
+          <el-button type="warning" size="mini">警告按钮</el-button>
+          <el-button type="danger">危险按钮</el-button>
+        </el-row>
+      </div>
+    </div>
+  </body>
+</html>
