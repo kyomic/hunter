@@ -1,12 +1,11 @@
 
 import request from "./core/request";
-// import Vue from 'vue'
-// import ElementUI from 'element-ui'
+import Vue from 'vue'
+import Element from 'element-ui'
 //import 'element-ui/lib/theme-chalk/index.css'
-const Vue = (globalThis as any).Vue;
-const Element = (globalThis as any).ELEMENT
+//const Vue = (globalThis as any).Vue;
+//const Element = (globalThis as any).ELEMENT
 export default class Application {
-
   constructor(root: string) {
     Vue.config.productionTip = false;
     Vue.use(Element)

@@ -9,7 +9,7 @@
   },
   // 新增popup弹框
   "browser_action": {
-    "default_popup": "popup.html"
+    "default_popup": "index.html"
   },
   // fix chrome.browserAction is undefind
   // see:https://stackoverflow.com/questions/11494232/cannot-read-property-onclicked-of-undefined-when-using-chrome-action-or-chrome

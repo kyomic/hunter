@@ -1,4 +1,5 @@
 console.log('popup is run....')
+//console.log(' VITE_HI: ', import.meta.env);
 import Application from "./app/Application";
 try {
   chrome.browserAction.onClicked.addListener(() => {

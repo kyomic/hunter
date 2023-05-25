@@ -1,14 +1,43 @@
+<!-- https://juejin.cn/post/7114959554709815326 -->
+<!-- https://segmentfault.com/a/1190000042584163-->
 <!DOCTYPE html>
-<html lang="">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="./favicon.ico" />
-    <title>hunter</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>我是标题</title>
+    <style>
+      .app {
+        width: 400px;
+      }
+    </style>
+    <!-- 2. 引入样式 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.13/vue.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+    />
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script></script>
+    <!-- <script src="assets/vue/2.6.13/vue.js"></script> -->
+    <!-- <link
+      rel="stylesheet"
+      href="assets/element-ui/2.15.13/theme-chalk/index.css"
+    /> -->
+    <!-- 3. 引入组件库 -->
+    <!-- <script src="assets/element-ui/2.15.13/index.js"></script> -->
   </head>
-
   <body>
-    <script type="module" src="/src/popup.ts"></script>
-    <!-- built files will be auto injected -->
+    <div class="app">
+      <div id="root">
+        <el-row>
+          <el-button type="mini">默认按钮</el-button>
+        </el-row>
+      </div>
+    </div>
+    <% if (env=='production') { %>
+    <script src="popup.js"></script>
+    <% } else { %>
+    <script src="src/popup.ts" type="module"></script>
+    <% } %>
   </body>
 </html>
