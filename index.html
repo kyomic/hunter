@@ -10,6 +10,7 @@
         width: 400px;
       }
     </style>
+    <% if (env=='development') { %>
     <!-- 2. 引入样式 -->
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.13/vue.js"></script>
     <link
@@ -17,20 +18,22 @@
       href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
     />
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-    <script></script>
-    <!-- <script src="assets/vue/2.6.13/vue.js"></script> -->
-    <!-- <link
+    <% } else { %>
+
+    <script src="assets/vue/2.6.13/vue.js"></script>
+    <link
       rel="stylesheet"
       href="assets/element-ui/2.15.13/theme-chalk/index.css"
-    /> -->
+    />
     <!-- 3. 引入组件库 -->
-    <!-- <script src="assets/element-ui/2.15.13/index.js"></script> -->
+    <script src="assets/element-ui/2.15.13/index.js"></script>
+    <% } %>
   </head>
   <body>
     <div class="app">
       <div id="root">
         <el-row>
-          <el-button type="mini">默认按钮</el-button>
+          <el-button type="primary" size="mini">默认按钮</el-button>
         </el-row>
       </div>
     </div>

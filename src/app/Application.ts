@@ -1,15 +1,18 @@
 
 import request from "./core/request";
-import Vue from 'vue'
+//import Vue from 'vue'
+let VueModule = (window as any).Vue;
+
 import Element from 'element-ui'
 //import 'element-ui/lib/theme-chalk/index.css'
 //const Vue = (globalThis as any).Vue;
 //const Element = (globalThis as any).ELEMENT
+//console.log('vue', Vue)
 export default class Application {
   constructor(root: string) {
-    Vue.config.productionTip = false;
-    Vue.use(Element)
-    const vm = new Vue({
+    VueModule.config.productionTip = false;
+    VueModule.use(Element)
+    const vm = new VueModule({
       el: root,
       data() {
         return {
